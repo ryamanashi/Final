@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tokyo Map-East Capital of the East</title>
+	<meta name="title" content="Tokyo Map-Shibuya" />
+	<meta name="description" content="Introducing the area of Shibuya district" />
+	<link rel="image_src" href="/images/notify_better_image.png" />
+
+	<meta content="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/onepage_scroll_image.png" property="og:image" />
+	<meta name="author" content="Rin Yamanashi.">
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .wrapper {
+    	height: 100% !important;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 10px;
+      color: #000;
+      margin-bottom: 5px;
+      font-size: 70px;
+      letter-spacing: -4px;
+      font-weight: 100;
+    }
+    h1 span {
+      font-size: 26px;
+      margin: 0 5px;
+      text-transform: capitalize;
+      background: rgba(0,0,0,0.85);
+      display: inline-block;
+      color: #6D461D;
+      border-radius: 5px 5px;
+      -webkit-border-radius: 5px 5px;
+      -moz-border-radius: 5px 5px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+      padding: 3px 10px;
+    }
+    h2 {
+      color: #6D461D;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    
+    code {
+      margin: 20px 1%;
+      float: left;
+      width: 48%;
+      height: 105px;
+      background: rgba(0,0,0,0.1);
+      border: rgba(0,0,0,0.05) 5px solid;
+      border-radius: 5px;
+      padding:5px;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 25px;
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+    code.html {
+      color: #7EC9E6;
+    }
+    code.js {
+      color: #FFAD00;
+    }
+
+    .main {
+      width: 100%;
+    }
+    
+    .main h1 {
+      float: left;
+      width: 100%;
+      font-size: 45px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      color: white;
+      margin: 0;
+    }
+    
+   
+    .main section .page_container {
+      position: relative;
+       top: 25%
+    }
+  .main section.page1 .page_container{
+     max-width: 1000px;
+     z-index:1;
+      background-color: #f1f1f2
+     
+  }
+    
+    .main section > img {
+      position: absolute;
+      max-width: 100%;
+    }
+  
+    .main section.page1 {
+      background-image: url(Shibuya-1.jpg);
+      text-align: center
+    }
+
+    .main section.page1 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+      align-self: center;
+    }
+    .main section.page1 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      margin-right: 10px
+      margin-bottom: 100px;
+    }
+    .main section.page1 p{
+      margin-bottom: 50px;
+    }
+   
+    
+   .main section.page2 {
+    background: #d8d8d9;
+    }
+
+    .main section.page2 .page_container {
+    top: 3%;
+    }
+    .main section.page2 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 50px;
+      letter-spacing: -1px;
+      color: black;
+    }
+    .main section.page2 h2 {
+      color: black;
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+    }
+      .main section.page3 {
+        background: #c0c0c1; 
+    }
+  
+    .main section.page3 .page_container {
+      width: 500px;
+      margin-left: 20px
+    }
+    
+    .main section.page3 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: black;
+    }
+    .main section.page3 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 21px;
+    }
+    
+    body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+    
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+      padding: 20px;
+      margin-top: 100px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body.disabled-onepage-scroll  section .page_container h1{
+      text-align: center;
+      font-size: 50px;
+    }
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
+      text-align: center;
+      width: 100%;
+    }
+    
+    body.disabled-onepage-scroll .main section.page1 > img {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+    }
+    
+    body.disabled-onepage-scroll .main section > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+    
+    body.disabled-onepage-scroll .main section.page3 .page_container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+    }
+	</style>
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+		
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+	    
+      <section class="page1">
+        <div class="page_container">
+          <h1>Shibuya</h1>
+          <h2>Representing modern and young culture of Japan, Shibuya is one of the most iconinc places in Tokyo that symbolize the dynamics of this gigantic metropolis. Chaotic Shibuya-crossing, Relaxing cafe, Energetic night life, the busiest Starbucks etc., you could find anything in this energetic place. It is always packed with locals and tourists who looking for something new.</h2>
+           <p>#Hachiko, #restaurant, #transportation, #Starbucks</p>
+         </div>
+        </section>
+	    
+	    <section class="page2">
+	      <div class="page_container">
+          <h1>Ready-to-use plugin</h1>
+          <h2>All you need is an HTML markup, call the script and BAM!</h2>
+          
+	      </div>
+      </section>
+	    
+	    <section class="page3">
+	      <div class="page_container">
+          <h1>Pretty Neat Eh?</h1>
+          <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
+          </div>
+      </section>
+    </div>
+    <a class="back" href="http://www.thepetedesign.com/#design">Back to The Top Page</a>
+  </div>
+
+    <footer>
+  <address>Rin Yamanashi, University of Miami School of Business Administration</address>
+
+  </footer>
+
+</body>
+</html>
