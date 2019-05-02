@@ -2,9 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Tokyo Map-East Capital of the East</title>
+	<title>Tokyo Map-Asakusa</title>
 	<meta name="title" content="Tokyo Map-Shibuya" />
-	<meta name="description" content="Introducing the area of Shibuya district" />
+	<meta name="description" content="Introducing the area of Asakusa district" />
 	<link rel="image_src" href="/images/notify_better_image.png" />
 
 	<meta content="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" property="og:url" />
@@ -31,6 +31,9 @@
     
     .wrapper {
     	height: 100% !important;
+      display: grid;
+      grid-gap: 20px;
+
     }
     
     a {
@@ -69,32 +72,8 @@
       margin-top: 0;
       margin-bottom: 10px;
     }
-    
-    code {
-      margin: 20px 1%;
-      float: left;
-      width: 48%;
-      height: 105px;
-      background: rgba(0,0,0,0.1);
-      border: rgba(0,0,0,0.05) 5px solid;
-      border-radius: 5px;
-      padding:5px;
-      color: white;
-      text-align: center;
-      font-size: 15px;
-      margin-top: 25px;
-      display: block;
-      box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    }
-    code.html {
-      color: #7EC9E6;
-    }
-    code.js {
-      color: #FFAD00;
-    }
 
+    
     .main {
       width: 100%;
     }
@@ -113,8 +92,9 @@
     
    
     .main section .page_container {
-      position: relative;
+      position: absolute;
        top: 25%
+   
     }
   .main section.page1 .page_container{
      max-width: 1000px;
@@ -122,15 +102,12 @@
       background-color: #f1f1f2
      
   }
-    
-    .main section > img {
-      position: absolute;
-      max-width: 100%;
-    }
+ 
   
     .main section.page1 {
-      background-image: url(Shibuya-1.jpg);
-      text-align: center
+      background-image: url(Asakusa-2.jpg);
+      text-align: center;
+
     }
 
     .main section.page1 h1 {
@@ -140,25 +117,26 @@
       font-size: 70px;
       color: black;
       align-self: center;
+
     }
     .main section.page1 h2 {
       color: rgba(0,0,0,0.85);
       text-align: center;
-      margin-right: 10px
       margin-bottom: 100px;
-    }
-    .main section.page1 p{
-      margin-bottom: 50px;
-    }
-   
+
+    } 
     
    .main section.page2 {
     background: #d8d8d9;
     }
 
+
     .main section.page2 .page_container {
-    top: 3%;
+    top: 5%;
+    align-content: center;
+    text-align: center;
     }
+    
     .main section.page2 h1 {
       text-align: center;
       padding: 0;
@@ -166,29 +144,65 @@
       font-size: 50px;
       letter-spacing: -1px;
       color: black;
+      margin-left: 60px
     }
     .main section.page2 h2 {
       color: black;
       text-align: center;
       line-height: 160%;
       font-weight: 100;
+      margin-left: 80px;
+
     }
+
+
+
+    .main section .page2 img {
+    width: auto;
+    height: auto;
+    }
+
+    h3 {
+    text-transform: none;
+      font-style: italic;
+      font-weight: 400;
+      font-family: noto serif;
+      letter-spacing: 1px;
+      font-size: 40px;
+      color: black;
+      padding-top: 90px;
+      background-color: white;
+
+    }
+      
       .main section.page3 {
-        background: #c0c0c1; 
+      background-image: url("Asakusa-5.jpg");
+
     }
   
     .main section.page3 .page_container {
-      width: 500px;
-      margin-left: 20px
-    }
-    
+
+      overflow: hidden;
+      max-width: 600px;
+      width: 700px;
+      height:700px;
+      margin-bottom: 50PX;
+      top: 5%;
+      margin-left: 40px; 
+      border: solid;
+      background-color: #c2c2c3;
+     z-index:1;
+        }
+
     .main section.page3 h1 {
-      text-align: center;
+      text-align: left;
       padding: 0;
-      margin-bottom: 0;
       font-size: 70px;
       letter-spacing: -1px;
       color: black;
+      margin-left: 50px;
+      margin: 20px;
+      
     }
     .main section.page3 h2 {
       color: rgba(0,0,0,0.85);
@@ -196,8 +210,156 @@
       line-height: 160%;
       font-weight: 100;
       font-size: 21px;
+      margin-right: 10px
+      margin-left: 20px;
     }
-    
+
+     
+     .back {
+
+      position: absolute;
+
+      top: 0;
+
+      left: 0;
+
+      text-align: center;
+
+      display: block;
+
+      padding: 7px;
+
+      width: 100%;
+
+      box-sizing: border-box;
+
+      -moz-box-sizing: border-box;
+
+      -webkit-box-sizing: border-box;
+
+      background: rgba(255, 255, 255, 0.25);
+
+      font-weight: bold;
+
+      font-size: 13px;
+
+      color: #000;
+
+      -webkit-transition: all 500ms ease-in-out;
+
+      -moz-transition: all 500ms ease-in-out;
+
+      -o-transition: all 500ms ease-in-out;
+
+      transition: all 500ms ease-in-out;
+
+    }
+
+    .back:hover {
+
+      color: black;
+
+      background: rgba(255, 255, 255, 0.5);
+
+    }
+    .grid-1 {
+      width: 100%;
+
+       display: grid;
+      grid-template-columns: px 100px;
+       grid-gap: 20px;
+       grid-template-areas: 
+       "item-1   item-2"
+       "item-3   item-4";
+
+       text-align: center;
+
+     margin-left: 75px
+
+    }
+
+  
+
+
+    .item-1 {
+      display: grid;
+      background-image: url("Asakusa-1.jpg");
+
+      height: 300px;
+      width: 600px;
+      margin-left: 50px
+      
+    }
+
+    .item-2 {
+     display: grid; 
+     background-image: url("Asakusa-3.jpg");
+     height: 300px;
+      width: 600px;
+       margin-right: 50px
+       
+
+    }
+    .item-3 {
+    display: grid;
+    background-image: url("Asakusa-6.jpg");
+    height: 300px;
+      width: 600px;
+      margin-left: 50px 
+     
+
+    }
+
+    .item-4 {
+    display: grid;
+    background-image: url("Asakusa-4.jpg");
+    height: 300px;
+      width: 600px;
+      margin-right: 50px
+
+
+    }
+
+    background-image {
+    position: absolute;
+    background-size: auto;
+    width: auto;
+    height: auto;
+    }
+
+
+    /*Media Queries//////*/
+
+    @media (max-width: 300px){
+      .grid-1{
+      grid-template-areas: 
+      "item-1"
+      "item-2"
+      "item-3"
+      "item-4"
+      ;
+      grid-gap: 10px;
+
+      }
+    }
+
+
+    @media (max-width: 500px){
+    .grid-1 {
+    grid-template-areas: 
+    "item-1"
+    "item-2"
+    "item-3"
+    "item-4"
+    ;
+
+    grid-gap: 20px;
+
+    }
+    }
+
+  
+
     body.disabled-onepage-scroll .onepage-wrapper  section {
       min-height: 100%;
       height: auto;
@@ -235,14 +397,16 @@
       width: 95%;
       margin: 0 auto 25px;
       float: none;
-      overflow: hidden;
-    }
+          }
     
     body.disabled-onepage-scroll .main section.page3 .page_container {
       width: 90%;
       margin-left: auto;
       margin-right: auto;
       right: 0;
+      position: absolute;
+      width: 80%;
+      left: 10%;
     }
 	</style>
 	<script>
@@ -262,34 +426,51 @@
 	    
       <section class="page1">
         <div class="page_container">
-          <h1>Shibuya</h1>
-          <h2>Representing modern and young culture of Japan, Shibuya is one of the most iconinc places in Tokyo that symbolize the dynamics of this gigantic metropolis. Chaotic Shibuya-crossing, Relaxing cafe, Energetic night life, the busiest Starbucks etc., you could find anything in this energetic place. It is always packed with locals and tourists who looking for something new.</h2>
-           <p>#Hachiko, #restaurant, #transportation, #Starbucks</p>
+          <h1>Asakusa</h1>
+          <article><h2>While Modern area of Tokyo is developing to be a fascinating travel spot, old traditional side of Japan still exists in Eastern Tokyo. Asakusa, also one of the hottest tourist spot in Tokyo has several of places to go if you want to enjoy good n old Tokyo. Asakusa is also notable for their variety of food and sweets.</article></h2>
+           <p><strong>#Kaminari-Mon, #sweets, #shrine, #tradition, #culture</strong></p>
          </div>
         </section>
 	    
-	    <section class="page2">
+      
+	    
+
+      <section class="page2">
 	      <div class="page_container">
-          <h1>Ready-to-use plugin</h1>
-          <h2>All you need is an HTML markup, call the script and BAM!</h2>
+          <div class="header">
+          <h1>Sights</h1>
+          <h2>Asakusa with iconic and tranditional spots, and of course, foods</h2>
+        </div>
+          <div class="grid-1">
+          <div class="item-1"><h3>Kaminari-Gate</h3></div>
+          <div class="item-2"><h3>Jinriki-Sya</h3></div>
+          <div class="item-3"><h3>Don.Quijote</h3></div>
+          <div class="item-4"><h3>Foods</h3></div>
+          
+         </div>
+        </div>
+          </section>
+      
+
+          <section class="page3">
+        <div class="page_container">
+          <div class="article">
+          <h1>Why should you visit Asakusa?</h1>
+          <h2>For centuries, Asakusa has been a center of so-called 'Edo-Culture" where people in the capital has developed a unique culture of Japan before the visit of US in 19th century. <strong>Sensouji</strong> is probably the most iconic temple in Tokyo area where numbers of tourists visit to wish. Just a few minutes away from Sensouji,<strong>Kaminari-Gate</strong> is also a notable tourist spot with its infamous Kaminari-Chouchin. If you enjoyed traditional and typical Asakusa enough, have some walk to <strong>Tokyo Sky Tree</strong>, which is currently the second tallest building in the world. <strong>Soramachi</strong> is located underneath and you could find literally anything from unique sweets to some Tokyo gifts for your friends.</h2>
+          </div>
+
+
+          </div>
+        </div>
+      </section> 
+          
           
 	      </div>
-      </section>
+     
 	    
-	    <section class="page3">
-	      <div class="page_container">
-          <h1>Pretty Neat Eh?</h1>
-          <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
-          </div>
-      </section>
     </div>
-    <a class="back" href="http://www.thepetedesign.com/#design">Back to The Top Page</a>
+    <a class="back" href="home.html">Home</a>
   </div>
-
-    <footer>
-  <address>Rin Yamanashi, University of Miami School of Business Administration</address>
-
-  </footer>
 
 </body>
 </html>
